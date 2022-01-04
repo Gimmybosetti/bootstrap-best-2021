@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http:/www.thymeleaf.org">
+	<head>
+		<div th:replace="fragments :: head"></div>
+		<title>Best of 2021</title>
+	</head>
+	
+	<body>
+		<h1 th:text="'Best ' + ${titolo} + ' del 2021'"></h1 >
+		<div th:if="${list.size() > 0}">
+			<ol class="list-group list-group-numbered">
+	  			<li th:each="item : ${list}" th:text="${item}" class="list-group-item"></li >
+			</ol>
+		</div>
+		<p th:unless="${list.size() > 0}">Non ci sono elementi nel database</p>
+		<div th:replace="fragments :: scripts"></div>
+	</body>
+</html>

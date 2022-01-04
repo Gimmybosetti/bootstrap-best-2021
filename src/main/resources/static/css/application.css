@@ -1,0 +1,9 @@
+h1 { text-align: center; margin: 2% 0px; }
+
+.card { width: 60%; margin:auto; margin-bottom: 50px; }
+
+.list-group { margin: auto; width: 30%; }
+
+.list-group-item { border: 1px solid black; }
+
+.navbar { border-bottom: 2px solid black; }

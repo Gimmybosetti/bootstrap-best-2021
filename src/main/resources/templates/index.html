@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http:/www.thymeleaf.org">
+	<head>
+		<div th:replace="fragments :: head"></div>
+		<title>Best of 2021</title>
+	</head>
+	
+	<body>
+		<h1 th:text="'Best of 2021 by ' + ${nome}"> </h1 >
+		<div class="card">
+		    <img th:src="@{/img/valentin-balan--UJDZv1wYic-unsplash.jpg}" class="card-img-top" alt="foto 2021">
+        	<div class="card-body">
+            	<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rutrum ipsum nec
+                	sodales euismod. In condimentum leo velit, blandit aliquam dui egestas vel. Donec eleifend fermentum
+               		dolor. Ut quis elit nisi. Quisque tempus at nulla nec facilisis. Nam vitae pretium nisi, ut porttitor
+                	quam. Maecenas varius aliquet mauris a pulvinar.
+            	</p>
+        	</div>
+    	</div>
+		<div th:replace="fragments :: scripts"></div>
+	</body>
+</html>
