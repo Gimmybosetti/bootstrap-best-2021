@@ -1,5 +1,7 @@
 h1 { text-align: center; margin: 2% 0px; }
 
+.vertical { border-left: 2px solid black; height: 50px; display:inline-block; position: absolute; left: 11%; top: 0; }
+
 .card { width: 60%; margin:auto; margin-bottom: 50px; }
 
 .list-group { margin: auto; width: 30%; }
@@ -7,3 +9,5 @@ h1 { text-align: center; margin: 2% 0px; }
 .list-group-item { border: 1px solid black; }
 
 .navbar { border-bottom: 2px solid black; }
+
+#primo-button { margin: auto 3%; }
